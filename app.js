@@ -86,7 +86,7 @@ let getresult=()=>{
     }
     let result=reducer(operations);
     console.log(result);
-    if(isNaN(result.val) || !result.val)throw result;
+    if(isNaN(result.val))throw result;
     showresult(result.val);
     operations=[];
     }
