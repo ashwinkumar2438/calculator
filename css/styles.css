@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+}
+
+body::before {
+  content: " ";
+  display: block;
+}
+
+.header {
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  margin: 50px auto;
+  width: 90vw;
+  min-height: 90vw;
+}
+
+.container .screen {
+  height: 200px;
+  background-color: rgba(129, 149, 230, 0.8);
+}
+
+.container .screen .result, .container .screen .current {
+  height: 50%;
+  text-align: right;
+  padding: 10px;
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+}
+
+.container .screen .highlight {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    min-height: 550px;
+    width: 350px;
+  }
+  .container .screen {
+    height: 130px;
+  }
+}
+
+.panel {
+  display: -ms-grid;
+  display: grid;
+  height: 90vw;
+  width: 90vw;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 20% 20% 20% 20% 20%;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.panel button {
+  outline: none;
+  background: rgba(30, 30, 30, 0.96);
+  color: white;
+  cursor: pointer;
+}
+
+.panel button.ac {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.panel button:hover, .panel button:active {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: inset 0 0 20px rgba(118, 118, 118, 0.5);
+          box-shadow: inset 0 0 20px rgba(118, 118, 118, 0.5);
+}
+
+@media screen and (min-width: 992px) {
+  .panel {
+    height: 420px;
+    width: 350px;
+  }
+  .panel button {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

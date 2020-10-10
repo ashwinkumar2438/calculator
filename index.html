@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+            <div class="header">Calculator</div>
+        <div class="screen">
+            <div class="result"></div>
+            <div class="current"></div>
+        </div>
+        <div class="panel">
+            <button class="ac" onclick="cleardisplay(true)">AC</button>
+            <button onclick="cleardisplay(false)">[x]</button>
+            <button onclick="operate('/')">/</button>
+            <button onclick="number('7')">7</button>
+            <button onclick="number('8')">8</button>
+            <button onclick="number('9')">9</button>
+            <button onclick="operate('*')">*</button>
+            <button onclick="number('4')">4</button>
+            <button onclick="number('5')">5</button>
+            <button onclick="number('6')">6</button>
+            <button onclick="operate('-')">-</button>
+            <button onclick="number('1')">1</button>
+            <button onclick="number('2')">2</button>
+            <button onclick="number('3')">3</button>
+            <button onclick="operate('+')">+</button>
+            <button onclick="numberdot('.')">.</button>
+            <button onclick="number('0')">0</button>
+            <button onclick="bracket()">()</button>            
+            <button onclick="getresult()">=</button>            
+        </div>
+    </div>
+</body>
+</html>
